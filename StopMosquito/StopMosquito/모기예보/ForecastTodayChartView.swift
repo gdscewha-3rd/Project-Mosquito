@@ -62,7 +62,7 @@ class ForecastTodayChartView: UIView {
         pieChartView.centerTextOffset = CGPoint(x: 0, y: -20)
         
         pieChartView.legend.enabled = false
-        
+                
         updateChartData()
     }
     
@@ -76,5 +76,7 @@ class ForecastTodayChartView: UIView {
         chartDataSet.drawValuesEnabled = false
         
         pieChartView.data = chartData
+        
+        pieChartView.animate(xAxisDuration: 1.0)
     }
 }

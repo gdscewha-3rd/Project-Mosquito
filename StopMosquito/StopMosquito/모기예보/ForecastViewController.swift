@@ -16,6 +16,7 @@ class ForecastViewController: UIViewController {
     let temperatureLabel = UILabel()
     let humidityLabel = UILabel()
     let forecastTodayChartView = ForecastTodayChartView()
+    let forecastWeekChartView = ForecastWeekChartView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +61,7 @@ extension ForecastViewController {
         weatherStackView.spacing = 4
         
         forecastTodayChartView.translatesAutoresizingMaskIntoConstraints = false
+        forecastWeekChartView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(dateLabel)
         
@@ -69,6 +71,7 @@ extension ForecastViewController {
         
         view.addSubview(weatherStackView)
         view.addSubview(forecastTodayChartView)
+        view.addSubview(forecastWeekChartView)
 
     }
     
@@ -81,11 +84,19 @@ extension ForecastViewController {
             weatherStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
         
-        // Score Chart
+        // Today Score Chart
         NSLayoutConstraint.activate([
             forecastTodayChartView.topAnchor.constraint(equalToSystemSpacingBelow: weatherStackView.bottomAnchor, multiplier: 4),
             forecastTodayChartView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             forecastTodayChartView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
+            view.trailingAnchor.constraint(equalToSystemSpacingAfter: forecastTodayChartView.trailingAnchor, multiplier: 2)
+        ])
+        
+        // Week Score Chart
+        NSLayoutConstraint.activate([
+            forecastWeekChartView.topAnchor.constraint(equalToSystemSpacingBelow: forecastTodayChartView.bottomAnchor, multiplier: 5),
+            forecastWeekChartView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            forecastWeekChartView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
             view.trailingAnchor.constraint(equalToSystemSpacingAfter: forecastTodayChartView.trailingAnchor, multiplier: 2)
         ])
     }
