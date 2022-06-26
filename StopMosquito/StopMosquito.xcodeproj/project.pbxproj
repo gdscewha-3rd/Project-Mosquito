@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		899985482868BD1C009551D7 /* ForecastWeekChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899985472868BD1C009551D7 /* ForecastWeekChartView.swift */; };
+		8999854A2868BD41009551D7 /* ForecastWeekChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899985492868BD41009551D7 /* ForecastWeekChartView.xib */; };
 		89A0E39A286609800014B2CF /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 89A0E399286609800014B2CF /* Charts */; };
 		89A0E39E28660B360014B2CF /* ForecastTodayChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A0E39D28660B360014B2CF /* ForecastTodayChartView.xib */; };
 		89A0E3A028660B460014B2CF /* ForecastTodayChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A0E39F28660B460014B2CF /* ForecastTodayChartView.swift */; };
@@ -14,10 +16,11 @@
 		89E2FC492864E88500175D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E2FC482864E88500175D6F /* Assets.xcassets */; };
 		89E2FC4C2864E88500175D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E2FC4A2864E88500175D6F /* LaunchScreen.storyboard */; };
 		89E2FC552864EA8D00175D6F /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2FC542864EA8D00175D6F /* ForecastViewController.swift */; };
-		89E2FC572864F50D00175D6F /* ForecastScoreChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2FC562864F50D00175D6F /* ForecastScoreChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		899985472868BD1C009551D7 /* ForecastWeekChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastWeekChartView.swift; sourceTree = "<group>"; };
+		899985492868BD41009551D7 /* ForecastWeekChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastWeekChartView.xib; sourceTree = "<group>"; };
 		89A0E39D28660B360014B2CF /* ForecastTodayChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastTodayChartView.xib; sourceTree = "<group>"; };
 		89A0E39F28660B460014B2CF /* ForecastTodayChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTodayChartView.swift; sourceTree = "<group>"; };
 		89E2FC3C2864E88400175D6F /* StopMosquito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopMosquito.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,7 +29,6 @@
 		89E2FC4B2864E88500175D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89E2FC4D2864E88500175D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89E2FC542864EA8D00175D6F /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
-		89E2FC562864F50D00175D6F /* ForecastScoreChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastScoreChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +75,10 @@
 			isa = PBXGroup;
 			children = (
 				89E2FC542864EA8D00175D6F /* ForecastViewController.swift */,
-				89E2FC562864F50D00175D6F /* ForecastScoreChart.swift */,
 				89A0E39F28660B460014B2CF /* ForecastTodayChartView.swift */,
 				89A0E39D28660B360014B2CF /* ForecastTodayChartView.xib */,
+				899985472868BD1C009551D7 /* ForecastWeekChartView.swift */,
+				899985492868BD41009551D7 /* ForecastWeekChartView.xib */,
 			);
 			name = Forecast;
 			path = "모기예보";
@@ -147,6 +150,7 @@
 			files = (
 				89A0E39E28660B360014B2CF /* ForecastTodayChartView.xib in Resources */,
 				89E2FC4C2864E88500175D6F /* LaunchScreen.storyboard in Resources */,
+				8999854A2868BD41009551D7 /* ForecastWeekChartView.xib in Resources */,
 				89E2FC492864E88500175D6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,8 +163,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				89A0E3A028660B460014B2CF /* ForecastTodayChartView.swift in Sources */,
-				89E2FC572864F50D00175D6F /* ForecastScoreChart.swift in Sources */,
 				89E2FC402864E88400175D6F /* AppDelegate.swift in Sources */,
+				899985482868BD1C009551D7 /* ForecastWeekChartView.swift in Sources */,
 				89E2FC552864EA8D00175D6F /* ForecastViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

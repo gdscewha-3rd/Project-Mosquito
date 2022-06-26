@@ -21,7 +21,6 @@ class ForecastViewController: UIViewController {
         super.viewDidLoad()
         style()
         layout()
-        setupForecastTodayChartView()
     }
 }
 
@@ -86,13 +85,8 @@ extension ForecastViewController {
         NSLayoutConstraint.activate([
             forecastTodayChartView.topAnchor.constraint(equalToSystemSpacingBelow: weatherStackView.bottomAnchor, multiplier: 4),
             forecastTodayChartView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            forecastTodayChartView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor)
+            forecastTodayChartView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
+            view.trailingAnchor.constraint(equalToSystemSpacingAfter: forecastTodayChartView.trailingAnchor, multiplier: 2)
         ])
-    }
-    
-    private func setupForecastTodayChartView() {
-        var size = forecastTodayChartView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
-        size.width = UIScreen.main.bounds.width
-        forecastTodayChartView.frame.size = size
     }
 }

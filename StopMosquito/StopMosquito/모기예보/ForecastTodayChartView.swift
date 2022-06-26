@@ -20,13 +20,15 @@ class ForecastTodayChartView: UIView {
     }
     
     override var intrinsicContentSize: CGSize {
-        return CGSize(width: UIView.noIntrinsicMetric, height: 200)
+        return CGSize(width: UIView.noIntrinsicMetric, height: 150)
     }
     
     private func commonInit() {
         let bundle = Bundle(for: ForecastTodayChartView.self)
         bundle.loadNibNamed("ForecastTodayChartView", owner: self, options: nil)
         addSubview(contentView)
+        addSubview(pieChartView)
+        
         contentView.backgroundColor = UIColor(named: "background")
         
         contentView.translatesAutoresizingMaskIntoConstraints = false
