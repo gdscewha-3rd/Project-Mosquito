@@ -12,6 +12,7 @@
 		8999854D2868E65D009551D7 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8999854C2868E65D009551D7 /* ReportViewController.swift */; };
 		899985502868E6CF009551D7 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8999854F2868E6CF009551D7 /* SoundViewController.swift */; };
 		899985522868E781009551D7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899985512868E781009551D7 /* TabBarViewController.swift */; };
+		899985542868F441009551D7 /* ReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899985532868F441009551D7 /* ReportCell.swift */; };
 		89A0E39A286609800014B2CF /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 89A0E399286609800014B2CF /* Charts */; };
 		89A0E39E28660B360014B2CF /* ForecastTodayChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A0E39D28660B360014B2CF /* ForecastTodayChartView.xib */; };
 		89A0E3A028660B460014B2CF /* ForecastTodayChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A0E39F28660B460014B2CF /* ForecastTodayChartView.swift */; };
@@ -27,6 +28,7 @@
 		8999854C2868E65D009551D7 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		8999854F2868E6CF009551D7 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 		899985512868E781009551D7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		899985532868F441009551D7 /* ReportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCell.swift; sourceTree = "<group>"; };
 		89A0E39D28660B360014B2CF /* ForecastTodayChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastTodayChartView.xib; sourceTree = "<group>"; };
 		89A0E39F28660B460014B2CF /* ForecastTodayChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTodayChartView.swift; sourceTree = "<group>"; };
 		89E2FC3C2864E88400175D6F /* StopMosquito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopMosquito.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				8999854C2868E65D009551D7 /* ReportViewController.swift */,
+				899985532868F441009551D7 /* ReportCell.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -84,9 +87,9 @@
 		89E2FC3E2864E88400175D6F /* StopMosquito */ = {
 			isa = PBXGroup;
 			children = (
-				8999854E2868E6C0009551D7 /* Sound */,
-				8999854B2868E605009551D7 /* Report */,
 				89E2FC532864E9B800175D6F /* Forecast */,
+				8999854B2868E605009551D7 /* Report */,
+				8999854E2868E6C0009551D7 /* Sound */,
 				899985512868E781009551D7 /* TabBarViewController.swift */,
 				89E2FC3F2864E88400175D6F /* AppDelegate.swift */,
 				89E2FC482864E88500175D6F /* Assets.xcassets */,
@@ -194,6 +197,7 @@
 				899985522868E781009551D7 /* TabBarViewController.swift in Sources */,
 				899985502868E6CF009551D7 /* SoundViewController.swift in Sources */,
 				89E2FC552864EA8D00175D6F /* ForecastViewController.swift in Sources */,
+				899985542868F441009551D7 /* ReportCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
