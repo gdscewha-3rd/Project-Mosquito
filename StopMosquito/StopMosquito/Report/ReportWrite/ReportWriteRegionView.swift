@@ -13,7 +13,6 @@ class ReportWriteRegionView: UIView {
     var stackView = UIStackView()
     var titleLabel = UILabel()
     var regionTextField = UITextField()
-    var testTextField = UITextField()
     
     let regions = [
         "서울",
@@ -71,14 +70,14 @@ extension ReportWriteRegionView {
         regionTextField.backgroundColor = .white
         regionTextField.borderStyle = .roundedRect
         regionTextField.tintColor = .clear
-    }
-    
-    func layout() {
+        
         stackView.addArrangedSubview(titleLabel)
         stackView.addArrangedSubview(regionTextField)
         
         addSubview(stackView)
-        
+    }
+    
+    func layout() {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 1),
             stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),

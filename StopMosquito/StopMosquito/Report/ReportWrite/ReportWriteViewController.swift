@@ -11,6 +11,7 @@ import UIKit
 class ReportWriteViewController: UIViewController {
     
     var reportWriteRegionView = ReportWriteRegionView()
+    var reportWriteContentView = ReportWriteContentView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,15 +27,24 @@ extension ReportWriteViewController {
         view.backgroundColor = UIColor(named: "background")
         
         reportWriteRegionView.translatesAutoresizingMaskIntoConstraints = false
+        reportWriteContentView.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func layout() {
         view.addSubview(reportWriteRegionView)
+        view.addSubview(reportWriteContentView)
         
         NSLayoutConstraint.activate([
             reportWriteRegionView.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 2),
             reportWriteRegionView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 1),
             view.trailingAnchor.constraint(equalToSystemSpacingAfter: reportWriteRegionView.trailingAnchor, multiplier: 1)
+        ])
+        
+        NSLayoutConstraint.activate([
+            reportWriteContentView.topAnchor.constraint(equalToSystemSpacingBelow: reportWriteRegionView.bottomAnchor, multiplier: 1),
+            reportWriteContentView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 1),
+            view.trailingAnchor.constraint(equalToSystemSpacingAfter: reportWriteContentView.trailingAnchor, multiplier: 1),
+            view.safeAreaLayoutGuide.bottomAnchor.constraint(equalToSystemSpacingBelow: reportWriteContentView.bottomAnchor, multiplier: 2)
         ])
     }
 }
