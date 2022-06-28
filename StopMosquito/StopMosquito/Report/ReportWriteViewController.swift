@@ -13,6 +13,7 @@ class ReportWriteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
+        setNavigationBar()
         layout()
     }
 }
@@ -20,10 +21,22 @@ class ReportWriteViewController: UIViewController {
 extension ReportWriteViewController {
     
     func style() {
-        view.backgroundColor = .blue
+        view.backgroundColor = UIColor(named: "background")
     }
     
     func layout() {
         
+    }
+}
+
+extension ReportWriteViewController {
+    func setNavigationBar() {
+        let closeButton = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(popVC))
+        closeButton.tintColor = .black
+        navigationItem.leftBarButtonItem = closeButton
+    }
+    
+    @objc func popVC() {
+        self.dismiss(animated: true, completion: nil)
     }
 }
