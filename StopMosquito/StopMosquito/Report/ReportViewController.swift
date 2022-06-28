@@ -74,6 +74,15 @@ extension ReportViewController {
             writeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             view.safeAreaLayoutGuide.bottomAnchor.constraint(equalToSystemSpacingBelow: writeButton.bottomAnchor, multiplier: 4)
         ])
+        
+        writeButton.addTarget(self, action: #selector(pushWritePage), for: .touchUpInside)
+    }
+    
+    @objc func pushWritePage(sender: UIButton) {
+        let rootVC = ReportWriteViewController()
+        rootVC.title = "새 제보"
+        let navVC = UINavigationController(rootViewController: rootVC)
+        present(navVC, animated: true)
     }
 }
 
