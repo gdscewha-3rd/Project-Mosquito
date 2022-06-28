@@ -21,6 +21,8 @@
 		89E2FC4C2864E88500175D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E2FC4A2864E88500175D6F /* LaunchScreen.storyboard */; };
 		89E2FC552864EA8D00175D6F /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2FC542864EA8D00175D6F /* ForecastViewController.swift */; };
 		89F426C7286B39E3008B8F9C /* ReportWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F426C6286B39E3008B8F9C /* ReportWriteViewController.swift */; };
+		89F426CA286B403A008B8F9C /* ReportWriteRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F426C9286B403A008B8F9C /* ReportWriteRegionView.swift */; };
+		89F426CC286B5198008B8F9C /* ReportWriteContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F426CB286B5198008B8F9C /* ReportWriteContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		89E2FC4D2864E88500175D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89E2FC542864EA8D00175D6F /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		89F426C6286B39E3008B8F9C /* ReportWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportWriteViewController.swift; sourceTree = "<group>"; };
+		89F426C9286B403A008B8F9C /* ReportWriteRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportWriteRegionView.swift; sourceTree = "<group>"; };
+		89F426CB286B5198008B8F9C /* ReportWriteContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportWriteContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,9 @@
 		8999854B2868E605009551D7 /* Report */ = {
 			isa = PBXGroup;
 			children = (
+				89F426C8286B4022008B8F9C /* ReportWrite */,
 				8999854C2868E65D009551D7 /* ReportViewController.swift */,
 				899985532868F441009551D7 /* ReportCell.swift */,
-				89F426C6286B39E3008B8F9C /* ReportWriteViewController.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -113,6 +117,16 @@
 			);
 			name = Forecast;
 			path = "모기예보";
+			sourceTree = "<group>";
+		};
+		89F426C8286B4022008B8F9C /* ReportWrite */ = {
+			isa = PBXGroup;
+			children = (
+				89F426C6286B39E3008B8F9C /* ReportWriteViewController.swift */,
+				89F426C9286B403A008B8F9C /* ReportWriteRegionView.swift */,
+				89F426CB286B5198008B8F9C /* ReportWriteContentView.swift */,
+			);
+			path = ReportWrite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,12 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89F426CC286B5198008B8F9C /* ReportWriteContentView.swift in Sources */,
 				89A0E3A028660B460014B2CF /* ForecastTodayChartView.swift in Sources */,
 				89E2FC402864E88400175D6F /* AppDelegate.swift in Sources */,
 				899985482868BD1C009551D7 /* ForecastWeekChartView.swift in Sources */,
 				8999854D2868E65D009551D7 /* ReportViewController.swift in Sources */,
 				899985522868E781009551D7 /* TabBarViewController.swift in Sources */,
 				89F426C7286B39E3008B8F9C /* ReportWriteViewController.swift in Sources */,
+				89F426CA286B403A008B8F9C /* ReportWriteRegionView.swift in Sources */,
 				899985502868E6CF009551D7 /* SoundViewController.swift in Sources */,
 				89E2FC552864EA8D00175D6F /* ForecastViewController.swift in Sources */,
 				899985542868F441009551D7 /* ReportCell.swift in Sources */,
